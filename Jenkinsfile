@@ -28,7 +28,7 @@ pipeline{
             input{
                 message 'Do you really want to start'
                 ok "Click on ok"
-                submiiter "Shabila"
+                submitter "Shabila"
             }
             steps{
                 sh 'npm start'
