@@ -6,7 +6,7 @@ pipeline{
     agent any
     stages{
         //clone repo
-        stages("clone repo")
+        stage("clone repo")
         {
             steps{
                 git branch:'main',url:'https://github.com/Shabila-khan/Jenkins-practice.git'
@@ -14,7 +14,7 @@ pipeline{
         }
         //install dependencies
         stage('Install dependencies'){
-            steps{
+            steps{   
                 sh 'npm install'
             }
         }
